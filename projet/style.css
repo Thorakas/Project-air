@@ -1,0 +1,240 @@
+.logo
+{	
+	width: 100px;
+	height: 100px;
+	background-color: black;	
+}
+
+button:hover {
+    background: rgb(211,211,211); 
+} 
+
+button:active  {
+    background-color: rgb(192,192,192);
+}
+
+
+.txt_placeholder
+{
+    text-align: center;
+}
+
+.form_reservation
+{
+    background-color: white;
+    padding-left: 10px;
+}
+th, td
+{
+    text-align: center;
+}
+
+.menu_topbar  {
+    background-color: rgba(211,211,211,0.5 );
+    
+}
+
+body
+{
+	background-color: rgb(255,250,250);
+
+}
+/*
+table
+{
+	margin-left: 300px;
+	border-collapse: collapse;
+	caption-side: bottom;
+}
+td, th
+{
+	border: 1px solid black;
+}
+
+/* Paragraphes en bleu par défaut 
+p
+{
+    background-color: blue;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large 
+@media screen and (max-width: 1024px)
+{
+    p
+    {
+        color: red; 
+        background-color: black;
+        font-size: 1.2em;
+    }
+}
+/*
+section
+{
+	margin-left: 470 px;
+	border : 1px solid blue;
+	
+}
+/*p
+{
+	background-color: yellow;
+	width: 300px;
+	min-width: 200px;
+	border: 1px solid black;
+	text-align: justify;
+	padding: 12px;
+	margin: auto;
+	margin-bottom: 20px;
+	overflow: auto;
+	/*word-wrap: break-word;
+}
+/*.premier
+{
+	color: red;
+}
+
+#ancre
+{
+	color: green;
+	
+}
+
+/*.beste
+{
+	color: red;
+}
+a:hover
+{
+	font-weight:bold;
+}	
+
+#conteneur
+{
+	border: 1px solid black;
+	/*width: 200px;
+	height: 350px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*justify-content: center;
+	/*align-items: center;/* change les éléments dans l'axe secondaire 
+	align-content: flex-end;
+	
+}
+.element:nth-child(1)
+{
+	background-color: blue;
+	align-self: flex-end;
+}.element:nth-child(2)
+{
+	background-color: green;
+	align-self: flex-end;
+}.element:nth-child(3)
+{
+	background-color: grey;
+	align-self: flex-end;
+}.element:nth-child(4)
+{
+	background-color: yellow;
+	align-self: flex-end;
+}.element:nth-child(5)
+{
+	background-color: red;
+	align-self: flex-end;
+}
+.element:nth-child(6)
+{
+	background-color: pink;
+	align-self: flex-end;
+}
+
+/*.element1
+{
+background-color: red;
+width: 200px;
+}
+
+.element2
+{
+background-color: green;
+width: 200px;
+}
+.element3
+{
+background-color: orange;
+width: 200px;
+}
+*/
+/*
+font-size permet de modifier la taille 
+	px: en pixel
+	cm: en cm
+	mm: en mm
+	xx-small: minuscule
+	x-small: très petit
+	small: petit
+	medium: moyen
+	large: grand
+	x-large: très grand
+	xx-large: gigantesque
+	em: change la taille en fonction d'un valeur (1 etant la taille d'un paragraphe)
+	%: change la taille en fonction du pourcentage(100% etant la taille d'un paragraphe)
+	
+color change la couleur de ce sur quoi il est appliqué
+	red, blue etc... : applique la couleur spécifié 
+	#: code couleur
+	rgb: red, green et blue comme ceci (0,0,0)
+	
+background-color change la couleur de font, s'utilise de la même manière que color	
+	balise body: change le font de la page web
+	
+background-image
+	url("chemin_de_l'image") (le chemin de l'image doit être indiqué par rapport au fichier css et non au fichier html
+	
+	
+font-family permet de définir une police d'écriture
+	font-family; police au choix, autre police au choix,etc... ( la deuxieme police d'ecriture s'affichera si la première n'est pas pris en compte par le navigateur etc...)
+	
+alignement permet de gerer les placement avec la propriété text-align
+	left: le texte sera aligné à gauche (par défaut)
+	center: le texte sera centré
+	right: le texte sera à droite
+	justify: le texte prendra toute la largeur de la ligne (ce sont en général des grands texte, des grands paragraphe que l'on va aligner)
+
+les flottants permet de faire flotter un element autour d'un texte par exemple(une image par exemple, qui doit etre placé avant le paragraphe)
+float
+	left: l'élément flottera à gauche	
+	right: l'élément flottera à droite
+	il suffit de l'appliquer à une balise 
+	
+clear permet de stopper l'effet d'un float, 
+	left: le texte se poursuit en dessous après un float left
+	right: le texte se poursuit en dessous après un float right
+	both: le texte se poursuit en dessous après un float left ou right(a privilegier)
+	
+transparence
+	opacity: avec une valeur de 1, l'élément sera totalement opaque et une valeur de 0 sera totalement transparant. 0.5 sera un juste milieu et l'élément sera opaque à 50%
+	
+bordure
+	border: superpropriété qui inclus les effets d'autres propriétés.on peut choisir la largeur, la couleur et le type de bordur( solid, dotted, dashed, inset ou outset etc...)
+	border-top
+	border-bottom
+	border-right
+	border-left
+	border-radius: permet de faire des bordures arrondies. elle s'indique en px. on peut aussi affiner l'arrondi avec des courbes elliptiques, en separant les valeurs avec un "/" (exemple border-radius: 20px / 10px;)
+
+ombre
+	box-shadow: applique l'ombre à tout le bloc et prend quatre valeur (decalage horizontal, verticale, adoucissement du dégradé et la couleur)(exemple box-shadow: 6px 6px 8px black) on peut ajouter une cinquieme valeur (inset) pour donner un effet enfoncé.
+	text-shadow: applique l'ombre au texte et fonctionne comme box-shadow.
+	
+pseudo format :hover
+information qui s'ajouter après le nom de la balise ou de la classe 
+au survol, fait quelque chose
+
+:active fait quelques chose au moment de cliquer
+
+:focus fait quelques chose lorsqu'un élément est selectionné(peut s'appliquer à des formulaires)
+
+:visited fait quelques chose sur les liens deja visité
+	
+	
+*/
